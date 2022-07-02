@@ -1,11 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
 /**
  * main - a random number to the variable n each time it is executed
+ * Return: success always 0
  */
-
-/*returrn :return always zero */
 int main(void)
 
 {
