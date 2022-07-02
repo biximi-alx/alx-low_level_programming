@@ -1,7 +1,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*main - a random number to the variable n each time it is executed
+/**
+ * main - a random number to the variable n each time it is executed
  *
  *return :return always zero
  */
