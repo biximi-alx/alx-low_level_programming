@@ -3,11 +3,9 @@
 #include <stdio.h>
 /**
  * main - a random number to the variable n each time it is executed
- *
- *return :return always zero
  */
 
-/*betty style doc for function main goes there */
+/*returrn :return always zero */
 int main(void)
 
 {
