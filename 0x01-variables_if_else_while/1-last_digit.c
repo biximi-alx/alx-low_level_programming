@@ -2,7 +2,7 @@
 
 /**
  * main -  assign a random number to the variable n each time it is executed
- * Complete the source code in order to print the last digit of the number stored in the va * riable n
+ * Complete the source code in order to print the last digit 
  * Return: success always 0
  */
 int main(void)
