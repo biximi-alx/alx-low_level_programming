@@ -3,15 +3,13 @@
 /**
  * main - a program that prints the alphabet in lowercase, and then in uppercase
  *
- *return: success always 0
+ *return; always return 0
  */
 int main(void)
 {
-  int n;
-  for(n =0; n<10;n++)
-  {
-    printf("%d\n", n);
-  }
- 
-  return (0);
+	int a =0;
+	for(; a < 10; n++)
+	printf("%d\n", a);
+	putchar('\n');
+	return (0);
 }
