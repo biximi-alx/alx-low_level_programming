@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 * _islower - checks
 * @c: a charcter argument
