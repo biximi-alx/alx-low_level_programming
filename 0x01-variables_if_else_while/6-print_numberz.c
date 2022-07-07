@@ -1,16 +1,20 @@
 #include <stdio.h>
 
 /**
- * main - a program that prints all single digit numbers 
- * return: return always 0
+ *main -> assign a random number to the variable n each time it is executed
+ *and print the last digit of the number stored in the variable n
+ *Return: Always 0 (Success)
  */
 int main(void)
 {
 int ch;
-for (n = 0; n < 10; n++)
+for (ch = 48; ch <= 57; ch++)
 {
-printf("%d", n);
+
+putchar(ch);
 }
-printf("\n");
+
+putchar(10); /* this is an ascii code for new line*/
+
 return (0);
 }
