@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _isupper cheches upper case
  * @c: print int
@@ -15,5 +16,4 @@ else
 {
 return (0);
 }
-
 }
