@@ -2,12 +2,13 @@
 
 /**
  *main - _isupper cheches upper case
- *
+ *@m:the number to be checked
+ 
  * Return: give 1 or 0
  */
-int _isupper(int c)
+int _isupper(int m)
 {
-	if (c >= 65 && c <= 90)
+	if (m >= 65 && m <= 90)
 	{
 		return (1);
 	}
