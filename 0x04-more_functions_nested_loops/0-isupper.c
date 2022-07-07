@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *main - _isupper cheches upper case
+ *_isupper - cheches if a letter is upper case
  *@m:the number to be checked
  
  * Return: give 1 or 0
