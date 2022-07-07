@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _isupper cheches upper case
- * @c: print int
+ *main - _isupper cheches upper case
+ *
  * Return: give 1 or 0
  */
 
