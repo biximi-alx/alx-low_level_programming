@@ -15,5 +15,5 @@ void print_rev(char *s)
 	{
 		_putchar(s[hotit]);
 	}
-	_putchar'\n');
+	_putchar('\n');
 }
