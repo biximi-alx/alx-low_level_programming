@@ -5,7 +5,7 @@
  * @a: pointer to array.
  * @n: number of array elements.
  *
- * Return: void.
+ * Return: return on success 0
  */
 void print_array(int *a, int n)
 {
