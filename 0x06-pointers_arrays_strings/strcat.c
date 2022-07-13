@@ -4,7 +4,6 @@
  * _strcat - This is a function strcat
  * @dest: first parameter
  * @src: second parameter
- * 
  * Return: a string
  */
 char *_strcat(char *dest, char *src)
