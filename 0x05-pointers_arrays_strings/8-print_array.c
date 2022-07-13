@@ -12,7 +12,7 @@ void print_arry(int *a, int n)
 {
 	int i;
 
-	for (i = 0; i < n; i++);
+	for (i = 0; i < n; i++)
 	{
 		printf("%d", a[i]);
 		if (i != n - 1)
@@ -21,5 +21,5 @@ void print_arry(int *a, int n)
 			printf(" ");
 		}
 	}
-	printf("\n");
+	printf('\n');
 }
