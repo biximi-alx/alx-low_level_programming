@@ -2,12 +2,12 @@
 #include <string.h>
 
 /**
- * _strncpy - for copying 
- * @dest: parameter
- * @src: parameter
- * @n: parameter
+ * _strncpy - for copying purpose
+ * @dest: param1
+ * @src: param2
+ * @n: param3
  */
-char *_strcat(char *dest, char *src)
+char *_strncpy(char *dest, char *src, int n)
 {
 	strncpy(dest, src, n);
 	return (dest);
