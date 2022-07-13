@@ -21,5 +21,5 @@ void print_arry(int *a, int n)
 			printf(" ");
 		}
 	}
-	printf('\n');
+	printf("\n");
 }
