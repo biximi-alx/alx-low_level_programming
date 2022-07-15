@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - Add one line to on line of code
+ *
+ * Return: on success 0
+ */
 int main(void)
 {
 	int n;
