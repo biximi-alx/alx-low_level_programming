@@ -1,10 +1,22 @@
-#include "main.h"
+#include <stdio.h>
+
 /**
-* _isdigit - checkes if the no is b/n 0 to 9
-* @m: input no
-* Return: Return: give 1 or 0
-*/
-int _isdigit(int m)
+ *
+ *
+ *
+ *
+ */
+int _isdigit(int c)
 {
-	return (m >= '0' && m <= '9');
-}  
+	int result;
+
+	if (c >= '0' && c <= '9')
+	{
+		result = 1;
+	}
+	else 
+	{
+		result = 0;
+	}
+	return (result);
+}
