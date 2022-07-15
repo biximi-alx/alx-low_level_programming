@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 /**
- *
- *
- *
- *
+ * _isdigit - function testig for digit through 0 to 9
+ * @c: - integer to be checked
+ * Return: 1 if it is a digit & 0 if not
  */
 int _isdigit(int c)
 {
@@ -14,7 +13,7 @@ int _isdigit(int c)
 	{
 		result = 1;
 	}
-	else 
+	else
 	{
 		result = 0;
 	}
