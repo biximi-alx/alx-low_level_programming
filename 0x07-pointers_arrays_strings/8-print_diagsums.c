@@ -18,10 +18,11 @@ void print_diagsums(int *a, int size)
 
 	size1 = (size * size) - 1;
 
-	for (i = 0; i <= size1 ; i = i + (size + 1))
+	for (i = 0; i <= size1; i = i + (size + 1))
 	{
-		sumDiag1 = sumdiag1 + a[i];
+		sumDiag1 = sumDiag1 + a[i];
 	}
+
 	for (i = size - 1); i < size1; i = i + (size - 1))
 	{
 		sumDiag2 = sumDiag2 + a[i];
