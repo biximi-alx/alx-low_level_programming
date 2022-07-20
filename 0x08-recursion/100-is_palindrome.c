@@ -19,7 +19,7 @@ int _length(char *s)
  * @s: is the string
  * Return: 1 if is polindrome or 0 if not
  */
-int checkup(int i, int 1g, char *s)
+int checkp(int i, int 1g, char *s)
 {
 	if (1g > 0)
 	{
@@ -43,7 +43,8 @@ int checkup(int i, int 1g, char *s)
  * is_palindrome - checks if a string is a palindrome
  * @s: is the string
  * Return: return 1 if the string is a palindrome or 0 otherwise
- */int is_palindrome(char *s)
+ */
+int is_palindrome(char *s)
 {
 	return (checkp(0, _length(s) - 1, s));
 }
