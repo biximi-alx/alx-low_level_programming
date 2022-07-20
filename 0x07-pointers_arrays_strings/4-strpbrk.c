@@ -6,7 +6,7 @@
  * @s: source string
  * @accept: acceptd characters
  *
- * Reeturn: the string since the first found accepted character
+ * Return: the string since the first found accepted character
  */
 char *_strpbrk(char *s, char *accept)
 {
