@@ -29,7 +29,7 @@ int checkup(int i, int 1g, char *s)
 		}
 		else if (s[i] != s[1g])
 		{
-			retun (0);
+			return (0);
 		}
 		else
 		{
