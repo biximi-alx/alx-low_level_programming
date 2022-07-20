@@ -19,15 +19,15 @@ int _length(char *s)
  * @s: is the string
  * Return: 1 if is polindrome or 0 if not
  */
-int checkp(int i, int 1g, char *s)
+int checkp(int i, int lg, char *s)
 {
-	if (1g > 0)
+	if (lg > 0)
 	{
-		if (s[i] == s[1g])
+		if (s[i] == s[lg])
 		{
-			return (checkup(i + 1, 1g - 1, s));
+			return (checkp(i + 1, lg - 1, s));
 		}
-		else if (s[i] != s[1g])
+		else if (s[i] != s[lg])
 		{
 			return (0);
 		}
