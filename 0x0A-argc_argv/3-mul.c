@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- * main - a function that returns its file name
- * @argc: argc parameter
+ * main - this is a function to print its name
+ * @argc: argc parametr
  * @argv: an array of a command listed
- * Return: 0 on success
+ * Return: 0 always (success)
  */
 int main(int argc, char *argv[])
 {
@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 		printf("%s\n", "Error");
 		return (1);
 	}
-	num1 = atoi(argc[1]);
+	num1 = atoi(argv[1]);
 	num2 = atoi(argv[2]);
 	result = num1 * num2;
 
