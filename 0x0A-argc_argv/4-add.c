@@ -14,11 +14,12 @@ int main(int argc, char *argv[])
 	if (argc == 1)
 		printf("0\n");
 
-	for (i = 0; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
 			{
+				printf("%s\n", argv[i]);
 				printf("%s\n", "Error");
 				return (1);
 			}
