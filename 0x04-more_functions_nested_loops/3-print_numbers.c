@@ -2,14 +2,14 @@
 
 /**
  * print_numbers - print numbers
- * Return: Aways 0 (success)
+ * Return: Aways 0 
  */
 void print_numbers(void)
 {
 	int i;
 
 	i = 0;
-	while (1 < 10)
+	while (i < 10)
 	{
 		_putchar (i + '0');
 		i++;
