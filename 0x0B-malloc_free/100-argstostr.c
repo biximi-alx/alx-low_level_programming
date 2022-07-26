@@ -1,40 +1,47 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
- * argstostr - concatenates all argumnets of your program
- * @ac: argumnet count
- * @av: argument of size ac
- * Return: double point to a new string. Or NULL otherwise
+ * argstostr - concatenates all the arguments of your program
+ * @ac: argument count in main
+ * @av: arguments passed to main
+ *
+ * Return: Pointer
  */
+
 char *argstostr(int ac, char **av)
 {
-	char *a, *retp;
-	int i, j, total;
+	char *s;
+	int l, lt, i, j, k;
 
 	if (ac == 0 || av == NULL)
-		return (NULL);
-	
-	for (i = 0, total = 0; i < ac; i++)
-	{
-		for (j = 0; *(*(av + i) + j)  != '\0'; j++, total++);
-		total++;
-	}
-	total++;
-	a = malloc(total * sizeof(char));
-	if (a == NULL)
-		return (NULL);
-	retp = a;
+		return (0);
+	l = 0, k = 0;
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; av[i][j] != '\0'; j++)
-		{
-			*a = av[i][j];
-			a++;
-		}
-		*a = '\n';
-		a++;
+		lt = 0;
+		while (av[i][lt])
+			lt++;
+		l += lt + 1;
 	}
-	return (retp);
+	s = malloc((l + 1) * sizeof(char));
+
+	if (s == 0)
+		return (0);
+
+	for (j = 0; j < ac; j++)
+	{
+		lt = 0;
+		while (av[j][lt])
+		{
+			*(s + k) = av[j][lt];
+			k++;
+			lt++;
+		}
+		*(s + k) = '\n';
+		k++;
+	}
+	*(s + k) = '\0';
+
+	return (s);
 }
