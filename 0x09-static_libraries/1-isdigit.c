@@ -1,21 +1,23 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * _isdigit - function testig for digit through 0 to 9
- * @c: - integer to be checked
- * Return: 1 if it is a digit & 0 if not
+ * _isdigit - A function that checks for a digit (0 through 9).
+ * @c: An input integer
+ * Return: 1 if c is a digit or 0 otherwise
  */
 int _isdigit(int c)
 {
-	int result;
+	char i = '0';
+	int isdigit = 0;
 
-	if (c >= '0' && c <= '9')
+	for (; i <= '9'; i++)
 	{
-		result = 1;
+		if (i == c)
+		{
+			isdigit = 1;
+			break;
+		}
 	}
-	else
-	{
-		result = 0;
-	}
-	return (result);
+
+	return (isdigit);
 }
