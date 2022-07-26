@@ -1,28 +1,24 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * _strpbrk -  a function that searches a string for any of a set of bytes.
- * @s: an input string
- * @accept: an input character with to locate into string s
- * Return:  a pointer to the byte in s that matches one of the bytes in accept,
- * or NULL if no such byte is found
+ * _isalpha - Check code
+ * @c: An input character
+ * Description: function returns 1 if the character is a
+ * letter, lowercase or uppercase.
+ * Return: 1 or 0 in otherwise.
  */
-char *_strpbrk(char *s, char *accept)
+int _isalpha(int c)
 {
-	char *start = accept;
+	char lower, upper;
+	int isletter = 0;
 
-	while (*s)
+	for (lower = 'a'; lower <= 'z'; lower++)
 	{
-		while (*accept)
+		for (upper = 'A'; upper <= 'Z'; upper++)
 		{
-			if (*accept == *s)
-				return (s);
-			accept++;
+			if (c == lower || c == upper)
+				isletter = 1;
 		}
-
-		accept = start;
-		s++;
 	}
-	return (NULL);
+	return (isletter);
 }
