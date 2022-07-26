@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * argstostr - concatenates all argumnets of your program
  * @ac: argumnet count
@@ -14,15 +15,13 @@ char *argstostr(int ac, char **av)
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
-
+	
 	for (i = 0, total = 0; i < ac; i++)
 	{
-		for (j = 0; *(*(av + i) + j)  != '\0'; j++, total++)
-			;
+		for (j = 0; *(*(av + i) + j)  != '\0'; j++, total++);
 		total++;
 	}
 	total++;
-
 	a = malloc(total * sizeof(char));
 	if (a == NULL)
 		return (NULL);
