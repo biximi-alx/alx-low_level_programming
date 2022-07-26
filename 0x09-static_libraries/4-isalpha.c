@@ -1,24 +1,28 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _isalpha - Check code
- * @c: An input character
- * Description: function returns 1 if the character is a
- * letter, lowercase or uppercase.
- * Return: 1 or 0 in otherwise.
+ * _strpbrk -  a function that searches a string for any of a set of bytes.
+ * @s: an input string
+ * @accept: an input character with to locate into string s
+ * Return:  a pointer to the byte in s that matches one of the bytes in accept,
+ * or NULL if no such byte is found
  */
-int _isalpha(int c)
+char *_strpbrk(char *s, char *accept)
 {
-	char lower, upper;
-	int isletter = 0;
+	char *start = accept;
 
-	for (lower = 'a'; lower <= 'z'; lower++)
+	while (*s)
 	{
-		for (upper = 'A'; upper <= 'Z'; upper++)
+		while (*accept)
 		{
-			if (c == lower || c == upper)
-				isletter = 1;
+			if (*accept == *s)
+				return (s);
+			accept++;
 		}
+
+		accept = start;
+		s++;
 	}
-	return (isletter);
+	return (NULL);
 }
