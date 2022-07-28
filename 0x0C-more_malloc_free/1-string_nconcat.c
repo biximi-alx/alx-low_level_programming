@@ -1,48 +1,57 @@
-#include "main.h"
-#include <stdlib.h>
+#include <main.h>
 #include <stdio.h>
+#include <stdlib.h>
 /**
- * string_nconcat- concatenates two strings
- * @s1: first string
- * @s2: second string
- * @n: numer of bytes from s2 to be copied
- * Return: pointer to concatenated string or NULL otherwise
+  *_strlen - counts and returns string length
+  * @s: that's the string
+  *
+  * Return: the length
+  */
+int _strlen(char *s)
+{
+int counter = 0;
+
+if (!*s)
+	return (0);
+while (*s)
+{
+	counter++;
+	s++;
+}
+return (counter);
+}
+/**
+ * string_nconcat - concats 2 strings
+ * @s1: the first str
+ * @s2: the second str
+ * @n: how much of s2 to add
+ * Return: ptr to new string
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int m, z, size, len1, len2;
-	char *tk;
+	char *new;
+	int total = 0;
+	int i;
+	int j = 0;
 
-	if (s1 == NULL)
+	if (!s1)
 		s1 = "";
-	if (s2 == NULL)
+	if (!s2)
 		s2 = "";
-	len1 = _strlen(s1);
-	len2 = _strlen(s2);
-	if (n > len2)
-		n = len2;
-	size = len1 + n;
-	tk = malloc(sizeof(char) * size + 1);
-	if (!tk)
+	total += _strlen(s1) + n;
+	new = malloc((total * sizeof(char)) + 1);
+	if (new == NULL)
+	{
 		return (NULL);
-	for (m = 0; m < len1; m++)
-		tk[m] = s1[m];
-	for (z = 0; z < n; z++, m++)
-		tk[m] = s2[z];
-	tk[m] = 0;
-	return (tk);
-}
-
-/**
- * _strlen - calculate and return string length
- * @string: string
- * Return: string length
- */
-int _strlen(char *string)
-{
-	int m;
-
-	for (m = 0; string[m] != '\0'; m++)
-		;
-	return (m);
+	}
+	for (i = 0; s1[i]; i++)
+	{
+		new[i] = s1[i];
+	}
+	for (; n || !s2; n--, i++, j++)
+	{
+		new[i] = s2[j];
+	}
+	new[i] = '\0';
+	return (new);
 }
