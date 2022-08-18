@@ -1,2 +1,2 @@
-# C - Bit manipulatioN
+# 0x14-bit_manipulation
 Task0_1
