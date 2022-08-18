@@ -1,2 +1,2 @@
-#0x12-singly_linked_lists
-Task0-1
+# C - Singly linked lists
+Task0_1
